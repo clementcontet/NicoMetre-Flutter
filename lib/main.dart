@@ -79,8 +79,7 @@ class _MainState extends State<Main> with WidgetsBindingObserver {
         _lastPosition = position;
       } else {
         double speed = position.speed / 1000 * 3600;
-        print("Computed speed: ${position.speed / 1000 * 3600}");
-        print("Given speed: $speed");
+        print("Speed: $speed");
         _lastPosition = position;
         setState(() {
           _currentSpeed = speed;
